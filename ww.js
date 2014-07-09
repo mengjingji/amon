@@ -7,4 +7,5 @@ util.inherits(Ww,Ls);
 
 var ww=new Ww();
 ww.hi();
+ww.say({msg:'dddd',to:'zs'});
 module.exports=Ww;
