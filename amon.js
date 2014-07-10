@@ -1,35 +1,18 @@
 var util = require("util");
 var events = require("events");
-var Amon=function (){
+var Amon=function (name){
+    //console.log('init begin...');
     events.EventEmitter.call(this);
-	//console.log('init begin...');
-	for(var i in Amon){
-		//console.log(i);
-		//console.log(Amon[i]);
-		this[i]=Amon[i];
-	}
-	for(var i in Amon.prototype){
-		//console.log(i);
-		//console.log(Amon[i]);
-		//this[i]=Amon.prototype[i];
-	}
-	//console.log(Amon.prototype);
-	//console.log(Amon.__proto__);
-	//console.log(Amon.call);
-	//console.log(Amon.apply);
-	//console.log(Amon.arguments);
-	this.name='amon';
-	this.jjjj=";;;;jjj";
+	if(name)this.name=name;else this.name='amon';
 	this.commandHandler={};
-	this.listen=function(msg){		
-		
+
+	this.listen=function(msg){
 		if(typeof(msg)==='object'){
 			if(msg.isEcho)this.log(msg);
 			var command=msg.command;
 			if(this.hasCommand(command)){
 				var result= this.doCommand(command,msg.data);
 				return {status:0,result:result};
-
 			}else if(command==='tell'){
 				var data=msg.data;
 				this.commandHandler[data.command]=data.method;
@@ -77,30 +60,15 @@ var Amon=function (){
 				}else{
 					code+=''+msg[i];
 				}
-				
 			}
 			code+='}';
 			console.log(code);
 		}else{
 			console.log(''+msg);
 		}
-		
 	}
 	//console.log('init end...');
-	//return this;
 }
 util.inherits(Amon, events.EventEmitter);
-
-Amon.a=function (){
-	console.log('call a:'+ this.name);
-}
-Amon.a2=function (){
-	console.log('call a:'+this.name);
-}
-//Amon.prototype=new express();
-Amon.prototype.b=function (){
-	console.log('call b:'+this.name);
-}
-
 module.exports= Amon;
 

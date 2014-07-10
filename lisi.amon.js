@@ -1,17 +1,12 @@
 var Amon =  require('./amon');
 var util=require('util');
 //var amon=  new Amon();//or new Amon();
-function Lisi(){
+function Lisi(name){
 	Amon.call(this);
-	for(var i in Lisi){
-		this[i]=Lisi[i];
-	}
-	for(var i in Lisi.prototype){
-		//this[i]=Lisi.prototype[i];
-	}
-	this.name='lisi';
-	this.jjjj="jjj";
-	this.fun=function (){};
+	this.name=name;
+    this.type="LiSi";
+    var this_=this;
+
 	this.listen({command:"tell",data:{command:"connectToMysql",data:{
 		host:'string',
 		user:'string',
@@ -39,66 +34,6 @@ function Lisi(){
 			return conn;
 			
 	}}});
-	var this_=this;
-	this.listen({command:"save",data:{entity:{a:1,b:2},table:'t1',ds:'ds1'},help:'',method:function(data){
-		
-
-		var msg=this.listen({command:"connectToMysql",data:{
-			host:'localhost',
-			user:'root',
-			database:'nodejs',
-			password:'yiyi',
-			port:3306
-		}});
-
-		if(msg.status===0){
-			var conn=msg.result;
-			conn.query('SELECT * from news', function(err, rows, fields) {
-			console.log('==2=================================');
-			if (err) {
-				console.log('==3================================='+err);
-				throw err;
-			}
-			var data = '';
-			console.log('==4================================');
-			for(var i = 0; i < rows.length; i++){
-
-				data += '<p>' + 'ID:' + rows[i].id + '</p>';
-				data += '<p>' + 'title:' + rows[i].title + '</p>';
-				data += '<p>' + 'contents:' + rows[i].content + '</p>';
-				data += '<hr>';
-				console.log('===================================');
-			}
-			
-			console.log(data+"0000000000000000000 by "+this_.name);
-
-
-			conn.end();
-	 
-		});	
-			
-		}else{
-
-			console.log('ERR!!!!!!!!!!!!!!');
-		}
-
-		
-
-
-	}});
-	
-	//return this;
 }
-//Lisi.prototype= new Amon();
 util.inherits(Lisi,Amon);
-//var lisi=new Lisi();
-
-
-
-
-
-
-//lisi.listen({command:"save",data:{entity:{a:1,b:2}},isEcho:true});
-//lisi.listen({command:"save",data:{entity:{a:1,b:2}},isEcho:true});
-
 module.exports= Lisi;
