@@ -7,6 +7,7 @@ function Lisi(name){
     this.description='extend from Amon;add ability:[connectToMysql].';
     if(!name){this.name='LiSi.init.noname';}
     this.type="LiSi";
+    this_=this;
     this.ds_default={
         host:'localhost',
         port:3310,
@@ -22,16 +23,19 @@ function Lisi(name){
         user:'string:userName',
         database:'string:databaseName',
         password:'string:password'
-    },method:function(ds){
+    },method:function(msg){
+        var ds=msg.content.data;
 		var mysql = require('mysql');
         if(!ds)ds=this.ds_default;
 		var conn = mysql.createConnection(ds);
 		console.log('good conneted ok');
-        this.say({from:this,to:''});
-		//return conn;
+
+        this.say({from:this,to:msg.from,content:{command:'reply',data:{src:msg,result:conn} },time:new Date(),rand:Math.random()});
+
 	}}},form:this,to:this});
 
 	this.say({time:new Date(),content:{command:"tell",data:{command:"help",data:{},method:function(data){}}},form:this,to:this});
+
 }
 util.inherits(Lisi,Amon);
 module.exports= Lisi;

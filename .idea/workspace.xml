@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7988a1e2-198e-4b7b-a92b-75ae8feb61ee" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sutdy/error.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/amon.js" afterPath="$PROJECT_DIR$/amon.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/amon.t.js" afterPath="$PROJECT_DIR$/amon.t.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lisi.amon.js" afterPath="$PROJECT_DIR$/lisi.amon.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.js" afterPath="$PROJECT_DIR$/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wangwu.amon.js" afterPath="$PROJECT_DIR$/wangwu.amon.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zhangsan.amon.js" afterPath="$PROJECT_DIR$/zhangsan.amon.js" />
     </list>
@@ -33,19 +30,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="test.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="test.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="2" selection-start="641" selection-end="641" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="570">
+            <state line="19" column="29" selection-start="732" selection-end="732" vertical-scroll-proportion="0.70170456" vertical-offset="114" max-vertical-offset="874">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="amon.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="amon.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/amon.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="16" selection-start="2718" selection-end="2718" vertical-scroll-proportion="0.3529412" vertical-offset="1685" max-vertical-offset="2964">
+            <state line="29" column="12" selection-start="645" selection-end="645" vertical-scroll-proportion="-12.24" vertical-offset="245" max-vertical-offset="3135">
               <folding />
             </state>
           </provider>
@@ -54,7 +51,7 @@
       <file leaf-file-name="amon.t.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/amon.t.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="13" selection-start="1230" selection-end="1651" vertical-scroll-proportion="0.0" vertical-offset="1076" max-vertical-offset="1520">
+            <state line="78" column="0" selection-start="1845" selection-end="1845" vertical-scroll-proportion="0.0" vertical-offset="1276" max-vertical-offset="1596">
               <folding />
             </state>
           </provider>
@@ -63,16 +60,7 @@
       <file leaf-file-name="lisi.amon.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lisi.amon.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="33" selection-start="874" selection-end="874" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="798">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wangwu.amon.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wangwu.amon.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="23" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
+            <state line="15" column="26" selection-start="425" selection-end="425" vertical-scroll-proportion="-8.6" vertical-offset="70" max-vertical-offset="874">
               <folding />
             </state>
           </provider>
@@ -81,7 +69,7 @@
       <file leaf-file-name="zhangsan.amon.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zhangsan.amon.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="66" selection-start="1757" selection-end="1771" vertical-scroll-proportion="-1.8" vertical-offset="715" max-vertical-offset="1900">
+            <state line="2" column="0" selection-start="66" selection-end="66" vertical-scroll-proportion="-1.52" vertical-offset="0" max-vertical-offset="1672">
               <folding />
             </state>
           </provider>
@@ -112,10 +100,10 @@
         <option value="$PROJECT_DIR$/wangwu.amon.js" />
         <option value="$PROJECT_DIR$/sutdy/error.js" />
         <option value="$PROJECT_DIR$/amon.t.js" />
-        <option value="$PROJECT_DIR$/test.js" />
         <option value="$PROJECT_DIR$/zhangsan.amon.js" />
-        <option value="$PROJECT_DIR$/amon.js" />
         <option value="$PROJECT_DIR$/lisi.amon.js" />
+        <option value="$PROJECT_DIR$/amon.js" />
+        <option value="$PROJECT_DIR$/test.js" />
       </list>
     </option>
   </component>
@@ -341,7 +329,11 @@
       <created>1404971637949</created>
       <updated>1404971637949</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="dddd">
+      <created>1404997135290</created>
+      <updated>1404997135290</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -368,6 +360,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32991454" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -376,13 +369,12 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5003723" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3897436" sideWeight="0.4996277" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2923077" sideWeight="0.4996277" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32991454" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -404,13 +396,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/amon.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="19" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="988">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zs.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="4" selection-start="118" selection-end="133" vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="304">
@@ -470,44 +455,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wangwu.amon.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/mysql/lib/protocol/sequences/Sequence.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="23" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
+        <state line="29" column="13" selection-start="874" selection-end="874" vertical-scroll-proportion="0.3307393" vertical-offset="466" max-vertical-offset="1919">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.js">
+    <entry file="file://$PROJECT_DIR$/wangwu.amon.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="2" selection-start="641" selection-end="641" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="570">
+        <state line="10" column="23" selection-start="301" selection-end="301" vertical-scroll-proportion="0.59375" vertical-offset="0" max-vertical-offset="320">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/amon.t.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="13" selection-start="1230" selection-end="1651" vertical-scroll-proportion="0.0" vertical-offset="1076" max-vertical-offset="1520">
+        <state line="78" column="0" selection-start="1845" selection-end="1845" vertical-scroll-proportion="0.0" vertical-offset="1276" max-vertical-offset="1596">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zhangsan.amon.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="66" selection-start="1757" selection-end="1771" vertical-scroll-proportion="-1.8" vertical-offset="715" max-vertical-offset="1900">
+        <state line="2" column="0" selection-start="66" selection-end="66" vertical-scroll-proportion="-1.52" vertical-offset="0" max-vertical-offset="1672">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lisi.amon.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="33" selection-start="874" selection-end="874" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="798">
+        <state line="15" column="26" selection-start="425" selection-end="425" vertical-scroll-proportion="-8.6" vertical-offset="70" max-vertical-offset="874">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/amon.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="16" selection-start="2718" selection-end="2718" vertical-scroll-proportion="0.3529412" vertical-offset="1685" max-vertical-offset="2964">
+        <state line="29" column="12" selection-start="645" selection-end="645" vertical-scroll-proportion="-12.24" vertical-offset="245" max-vertical-offset="3135">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="29" selection-start="732" selection-end="732" vertical-scroll-proportion="0.70170456" vertical-offset="114" max-vertical-offset="874">
           <folding />
         </state>
       </provider>

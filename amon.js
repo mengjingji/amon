@@ -21,10 +21,17 @@ var Amon=function (name){
     this_=this;
     this.env=env;
     this.env.push(this);
+    this.env[this.name]=this;
     this.on('reply',function(msg,data){
 
 
     });
+
+    this.ge1t=function(name){
+        for(var i=0;i<this.env.length;i++){
+            if(name===this.env[i].name)return this.env[i];
+        }
+    }
     this.hash=function(obj){
         var str='';
         if(typeof (obj)==='object'){
@@ -48,15 +55,14 @@ var Amon=function (name){
         return h+'';
     }
     this.say=function(msg,callback){
-        if(typeof (callback)==='function'){
-            console.log('*************************'+this.hash(msg));
-            this.once('aa',callback);
-        }else{
-            //this.hash(msg)
-        }
+        var caller=this;
         if(typeof (msg)==='object'){
+            if(!msg.to)msg['to']=this;
+            if(!msg.time)msg['time']=new Date();
+            if(!msg.random)msg['random']=Math.random();
+            if(typeof (callback)==='function')caller.once(msg.random,callback);
             if(msg.to){
-                msg['from']=this;
+                if(!msg.from)msg['from']=this;
                 msg['time']=new Date();
                 this.env['event'].emit('broadcast',msg);
                 //msg.to.emit('listen',msg);
@@ -70,9 +76,6 @@ var Amon=function (name){
     };
     this.on("listen",function(msg){
         if(typeof(msg)==='object'){
-            console.log('------------------------')
-            console.log(this.name);
-            console.log('------------------------')
             this.listen(msg);
         }else{
             console.log("unknow msg:"+msg);
@@ -83,8 +86,10 @@ var Amon=function (name){
 		if(typeof(msg)==='object'){
 			if(msg.isEcho)this.log(msg);
 			var command=msg.content.command;
+            //this.log(msg.content);
 			if(this.hasCommand(command)){
-				this.doCommand(command,msg.content.data);
+				//this.doCommand(command,msg.content.data);
+				this.doCommand(command,msg);
 				//return {status:0,result:result};
 			}else if(command==='tell'){
 				var data=msg.content.data;
@@ -93,7 +98,8 @@ var Amon=function (name){
 			}else if(msg.content.method){
 				this.commandHandler[command]=msg.content.method;
 				console.log(this.name+' tell me command:'+command+',have learn.');
-				this.doCommand(command,msg.content.data);
+				//this.doCommand(command,msg.content.data);
+				this.doCommand(command,msg);
 				//return {status:0,result:result};
 			}else{
 				console.log('unkown command:'+command+'!!!!!!!!!!!!!!!!!!!!!!!!!!!');
@@ -143,6 +149,9 @@ var Amon=function (name){
 			console.log(''+msg);
 		}
 	}
+    this.say({time:new Date(),content:{command:"tell",data:{command:"reply",data:{src:"msgObj:msgReq",result:"obj:result"},method:function(msg){
+        msg.content.data.src.from.emit(msg.content.data.src.random, msg.content.data.result, msg.content.data.src);
+    }}},from:this,to:this});
 	//console.log('init end...');
 }
 util.inherits(Amon, events.EventEmitter);

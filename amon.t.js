@@ -70,5 +70,9 @@ function hash(obj){
 }
 
 var am=new Amon('123456');
-console.log(hash(true));
+var a=require('crypto').randomBytes(16, function(ex, buf) {
+    var token = buf.toString('hex');
+    console.log(token);
+});
+console.log();
 module.exports=Amon;

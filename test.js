@@ -8,17 +8,33 @@ var lisi=new Lisi('lisi');
 var wangwu=new WangWu('WangWu');
 var zhangsan=new ZhangSan('zhangsan');
 
-//zhangsan.listen({command:"save",data:{entity:{user_name:'zhangsan',question_content:'3'},table:'t_crm_question'}});
+zhangsan.say({content:{command:"save",data:{entity:{user_name:'zhangsan',question_content:'3'},table:'t_crm_question'}}},function(result){
+    console.log("++++++++++++:status="+result.status)
+    console.log("++++++++++++:insertId="+result.insertId)
+});
 //zhangsan.listen({command:"list",data:{table:'t_crm_question'},isEcho:true});
 
-var msg={to:zhangsan,content:{command:"list",data:{table:'t_crm_question'},isEcho:true} };
-amon.say(msg,function(data){
+var msg={to:zhangsan,content:{command:"list",data:{table:'t_crm_question'}},random:Math.random()};
 
+
+amon.say(msg,function (data){
+    zhangsan.log(data);
+    console.log('seccc////////////////////////////////////////////////////');
 
 });
+
+
 /*
-amon.once(amon.hash(msg),function(data){
+amon.say(msg);
+amon.once(msg.random,function (data){
+    zhangsan.log(data);
+    console.log('seccc////////////////////////////////////////////////////');
 
 })
-*/
+ */
+
+
+
+
+
 
