@@ -43,4 +43,32 @@ function Amon(name){
     }
 
 }
+
+function hash(obj){
+    var str='';
+    if(typeof (obj)==='object'){
+        for(var key in obj){
+            str+=''+key+obj[key];
+        }
+    }else{
+        str=""+obj;
+    }
+    prime=key=str;
+    str=str+"";
+    var h = 0, off = 0;
+    var len = str.length;
+
+    for(var i = 0; i < len; i++){
+        h = 31 * h  + str.charCodeAt(off++);
+        if(h>0x7fffffff || h<0x80000000){
+            h=h & 0xffffffff;
+        }
+    }
+    return h;
+
+
+}
+
+var am=new Amon('123456');
+console.log(hash(true));
 module.exports=Amon;
