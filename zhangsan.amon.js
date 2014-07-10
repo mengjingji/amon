@@ -46,9 +46,10 @@ function Zhangsan(name){
                 for(var i = 0; i < rows.length; i++){
                     data += '[';
                     data += '{';
-                    data += 'ID:' + rows[i].id+',' ;
-                    data += 'title:' + rows[i].recordor_account +',' ;
-                    data += 'contents:' + rows[i].question_content ;
+                    for(var key in rows[i]){
+                        if(typeof(rows[i][key])==='function')continue;
+                        data += key+':' + rows[i][key]+',' ;
+                    }
                     data += '}';
                     data += '],\n';
                 }
