@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7988a1e2-198e-4b7b-a92b-75ae8feb61ee" name="Default" comment="" />
+    <list default="true" id="7988a1e2-198e-4b7b-a92b-75ae8feb61ee" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="amon.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,16 +29,27 @@
       <file leaf-file-name="amon.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/amon.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="27" selection-start="1641" selection-end="1648" vertical-scroll-proportion="0.0" vertical-offset="912" max-vertical-offset="2128">
+            <state line="54" column="26" selection-start="1629" selection-end="1629" vertical-scroll-proportion="0.0" vertical-offset="1026" max-vertical-offset="1520">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zhangsan.amon.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="zhangsan.amon.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zhangsan.amon.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="30" selection-start="424" selection-end="424" vertical-scroll-proportion="0.53150684" vertical-offset="110" max-vertical-offset="931">
+            <state line="5" column="4" selection-start="153" selection-end="194" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
+              <folding>
+                <marker date="1404961735094" expanded="true" signature="130:532" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="20" selection-start="310" selection-end="310" vertical-scroll-proportion="0.36438355" vertical-offset="0" max-vertical-offset="969">
               <folding />
             </state>
           </provider>
@@ -44,8 +58,17 @@
       <file leaf-file-name="lisi.amon.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lisi.amon.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="0" selection-start="2106" selection-end="2106" vertical-scroll-proportion="0.0" vertical-offset="1649" max-vertical-offset="2071">
-              <folding />
+            <state line="6" column="19" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="836">
+              <folding>
+                <marker date="1404961770869" expanded="true" signature="210:514" placeholder="{&quot;command&quot;: &quot;tell&quot;...}" />
+                <marker date="1404961770869" expanded="true" signature="231:513" placeholder="{&quot;command&quot;: &quot;connectToMysql&quot;...}" />
+                <marker date="1404961770869" expanded="true" signature="262:358" placeholder="{&quot;host&quot;: 'string'...}" />
+                <marker date="1404961770869" expanded="true" signature="380:512" placeholder="{...}" />
+                <marker date="1404961770869" expanded="true" signature="531:836" placeholder="{&quot;command&quot;: &quot;tell&quot;...}" />
+                <marker date="1404961770869" expanded="true" signature="552:835" placeholder="{&quot;command&quot;: &quot;help&quot;...}" />
+                <marker date="1404961770869" expanded="true" signature="573:675" placeholder="{&quot;host&quot;: 'string'...}" />
+                <marker date="1404961770869" expanded="true" signature="697:834" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,8 +76,14 @@
       <file leaf-file-name="wangwu.amon.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wangwu.amon.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="25" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0" vertical-offset="338" max-vertical-offset="931">
-              <folding />
+            <state line="21" column="23" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="513">
+              <folding>
+                <marker date="1404961788931" expanded="true" signature="83:467" placeholder="{...}" />
+                <marker date="1404961788931" expanded="true" signature="157:463" placeholder="{&quot;command&quot;: &quot;tell&quot;...}" />
+                <marker date="1404961788931" expanded="true" signature="178:462" placeholder="{&quot;command&quot;: &quot;save1&quot;...}" />
+                <marker date="1404961788931" expanded="true" signature="200:302" placeholder="{&quot;host&quot;: 'string'...}" />
+                <marker date="1404961788931" expanded="true" signature="324:461" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -62,7 +91,7 @@
       <file leaf-file-name="amon.t.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/amon.t.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="29" selection-start="391" selection-end="396" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="988">
+            <state line="16" column="29" selection-start="391" selection-end="396" vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="988">
               <folding />
             </state>
           </provider>
@@ -71,7 +100,7 @@
       <file leaf-file-name="zs.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="19" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
+            <state line="5" column="19" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="304">
               <folding />
             </state>
           </provider>
@@ -89,7 +118,7 @@
       <file leaf-file-name="ww.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ww.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="21" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="494">
+            <state line="9" column="21" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="494">
               <folding />
             </state>
           </provider>
@@ -103,6 +132,7 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
+    <option name="SYNC_SETTING" value="DONT" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitLogSettings">
@@ -117,7 +147,10 @@
         <option value="$PROJECT_DIR$/ls.js" />
         <option value="$PROJECT_DIR$/ww.js" />
         <option value="$PROJECT_DIR$/amon.js" />
+        <option value="$PROJECT_DIR$/zhangsan.amon.js" />
         <option value="$PROJECT_DIR$/lisi.amon.js" />
+        <option value="$PROJECT_DIR$/wangwu.amon.js" />
+        <option value="$PROJECT_DIR$/test.js" />
       </list>
     </option>
   </component>
@@ -153,6 +186,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -173,22 +207,25 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="vcs.Git" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/index.js" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/GitHub/PortableGit_054f2e797ebafd44a30203088cd3d58663c627ef/libexec/git-core/git.exe" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\resource\work\study\js\node\app\amon" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.lisi.amon.js">
+  <component name="RunManager" selected="Node.js.test.js">
     <configuration default="false" name="ww.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="D:/Program/nodejs/node" path-to-js-file="$PROJECT_DIR$/ww.js" working-dir="$PROJECT_DIR$">
       <browser start="false" url="" with-js-debugger="false" />
       <RunnerSettings RunnerId="NodeJS.debug" />
@@ -232,6 +269,12 @@
       <browser start="false" url="" with-js-debugger="false" />
       <method />
     </configuration>
+    <configuration default="false" name="test.js" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="D:/Program/nodejs/node" path-to-js-file="$PROJECT_DIR$/test.js" working-dir="$PROJECT_DIR$">
+      <browser start="false" url="" with-js-debugger="false" />
+      <RunnerSettings RunnerId="NodeJS.run" />
+      <ConfigurationWrapper RunnerId="NodeJS.run" />
+      <method />
+    </configuration>
     <configuration default="false" name="amon" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="D:/Program/nodejs/node" path-to-js-file="index.js" working-dir="$PROJECT_DIR$">
       <browser start="false" url="" with-js-debugger="false" />
       <RunnerSettings RunnerId="NodeJS.run" />
@@ -244,11 +287,19 @@
       <ConfigurationWrapper RunnerId="NodeJS.run" />
       <method />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.amon" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.ww.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.wangwu.amon.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.lisi.amon.js" />
+    <configuration default="false" name="zhangsan.amon.js" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="D:/Program/nodejs/node" path-to-js-file="$PROJECT_DIR$/zhangsan.amon.js" working-dir="$PROJECT_DIR$">
+      <browser start="false" url="" with-js-debugger="false" />
+      <RunnerSettings RunnerId="NodeJS.run" />
+      <ConfigurationWrapper RunnerId="NodeJS.run" />
+      <method />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.test.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.amon" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.lisi.amon.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.zhangsan.amon.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.ww.js" />
+      <item index="5" class="java.lang.String" itemvalue="Node.js.wangwu.amon.js" />
     </list>
     <recent_temporary>
       <list size="2">
@@ -258,18 +309,41 @@
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="7988a1e2-198e-4b7b-a92b-75ae8feb61ee" name="Default" comment="" />
       <created>1404899912000</created>
       <updated>1404899912000</updated>
     </task>
+    <task id="LOCAL-00001" summary="dddd">
+      <created>1404963474384</created>
+      <updated>1404963474384</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -296,11 +370,22 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="dddd" />
+    <option name="LAST_COMMIT_MESSAGE" value="dddd" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ww.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="21" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="494">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/amon.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="19" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="988">
@@ -336,9 +421,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="13" selection-start="6" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="798">
-          <folding />
-        </state>
+        <state line="0" column="13" selection-start="6" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="798" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ls.js">
@@ -371,28 +454,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/amon.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="27" selection-start="1641" selection-end="1648" vertical-scroll-proportion="0.0" vertical-offset="912" max-vertical-offset="2128">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wangwu.amon.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="25" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="931">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lisi.amon.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="0" selection-start="2106" selection-end="2106" vertical-scroll-proportion="0.0" vertical-offset="1649" max-vertical-offset="2071">
+        <state line="54" column="26" selection-start="1629" selection-end="1629" vertical-scroll-proportion="0.0" vertical-offset="1026" max-vertical-offset="1520">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zhangsan.amon.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="30" selection-start="424" selection-end="424" vertical-scroll-proportion="0.53150684" vertical-offset="110" max-vertical-offset="931">
+        <state line="5" column="4" selection-start="153" selection-end="194" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
+          <folding>
+            <marker date="1404961735094" expanded="true" signature="130:532" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wangwu.amon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="23" selection-start="519" selection-end="519" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="513">
+          <folding>
+            <marker date="1404961788931" expanded="true" signature="83:467" placeholder="{...}" />
+            <marker date="1404961788931" expanded="true" signature="157:463" placeholder="{&quot;command&quot;: &quot;tell&quot;...}" />
+            <marker date="1404961788931" expanded="true" signature="178:462" placeholder="{&quot;command&quot;: &quot;save1&quot;...}" />
+            <marker date="1404961788931" expanded="true" signature="200:302" placeholder="{&quot;host&quot;: 'string'...}" />
+            <marker date="1404961788931" expanded="true" signature="324:461" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lisi.amon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="19" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="836">
+          <folding>
+            <marker date="1404961770869" expanded="true" signature="210:514" placeholder="{&quot;command&quot;: &quot;tell&quot;...}" />
+            <marker date="1404961770869" expanded="true" signature="231:513" placeholder="{&quot;command&quot;: &quot;connectToMysql&quot;...}" />
+            <marker date="1404961770869" expanded="true" signature="262:358" placeholder="{&quot;host&quot;: 'string'...}" />
+            <marker date="1404961770869" expanded="true" signature="380:512" placeholder="{...}" />
+            <marker date="1404961770869" expanded="true" signature="531:836" placeholder="{&quot;command&quot;: &quot;tell&quot;...}" />
+            <marker date="1404961770869" expanded="true" signature="552:835" placeholder="{&quot;command&quot;: &quot;help&quot;...}" />
+            <marker date="1404961770869" expanded="true" signature="573:675" placeholder="{&quot;host&quot;: 'string'...}" />
+            <marker date="1404961770869" expanded="true" signature="697:834" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="20" selection-start="310" selection-end="310" vertical-scroll-proportion="0.36438355" vertical-offset="0" max-vertical-offset="969">
           <folding />
         </state>
       </provider>

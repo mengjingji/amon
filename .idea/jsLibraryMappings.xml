@@ -2,6 +2,7 @@
 <project version="4">
   <component name="JavaScriptLibraryMappings">
     <file url="file://$PROJECT_DIR$/lisi.amon.js" libraries="{Node.js v0.10.29 Core Modules}" />
+    <file url="file://$PROJECT_DIR$/test.js" libraries="{Node.js v0.10.29 Core Modules}" />
     <file url="file://$PROJECT_DIR$/wangwu.amon.js" libraries="{Node.js v0.10.29 Core Modules}" />
     <file url="file://$PROJECT_DIR$/ww.js" libraries="{Node.js v0.10.29 Core Modules}" />
     <file url="file://$PROJECT_DIR$/zhangsan.amon.js" libraries="{Node.js v0.10.29 Core Modules}" />
