@@ -1,5 +1,7 @@
-var express = require('express');
+var util = require("util");
+var events = require("events");
 var Amon=function (){
+    events.EventEmitter.call(this);
 	//console.log('init begin...');
 	for(var i in Amon){
 		//console.log(i);
@@ -87,6 +89,7 @@ var Amon=function (){
 	//console.log('init end...');
 	//return this;
 }
+util.inherits(Amon, events.EventEmitter);
 
 Amon.a=function (){
 	console.log('call a:'+ this.name);
@@ -101,6 +104,3 @@ Amon.prototype.b=function (){
 
 module.exports= Amon;
 
-
-//Amon.a();
-//console.log('jjjjjjjjjjjjjjjjjj');

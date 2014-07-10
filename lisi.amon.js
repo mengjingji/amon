@@ -63,18 +63,16 @@ function Lisi(){
 			console.log('==4================================');
 			for(var i = 0; i < rows.length; i++){
 
-				data += '<p>' + 'ID£º' + rows[i].id + '</p>';
-				data += '<p>' + 'title£º' + rows[i].title + '</p>';
-				data += '<p>' + 'contents£º' + rows[i].content + '</p>';
+				data += '<p>' + 'ID:' + rows[i].id + '</p>';
+				data += '<p>' + 'title:' + rows[i].title + '</p>';
+				data += '<p>' + 'contents:' + rows[i].content + '</p>';
 				data += '<hr>';
 				console.log('===================================');
 			}
 			
 			console.log(data+"0000000000000000000 by "+this_.name);
-			for(var key in this){
-				//console.log(key);
-			}
-			//res.send(data);
+
+
 			conn.end();
 	 
 		});	
