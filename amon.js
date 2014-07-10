@@ -5,6 +5,7 @@ var Amon=function (name){
     events.EventEmitter.call(this);
 	if(name)this.name=name;else this.name='amon';
 	this.commandHandler={};
+    //this_=this;
 
 	this.listen=function(msg){
 		if(typeof(msg)==='object'){
@@ -16,10 +17,10 @@ var Amon=function (name){
 			}else if(command==='tell'){
 				var data=msg.data;
 				this.commandHandler[data.command]=data.method;
-				console.log(this.name+'告诉的操作方法已经记忆'+data.command);			
+				console.log(this.name+' teach me command:'+data.command+',have can do.');
 			}else if(msg.method){
 				this.commandHandler[command]=msg.method;
-				console.log(this.name+'指定的默认的操作方法已经记忆'+command);
+				console.log(this.name+' tell me command:'+command+',have can do.');
 				var result= this.doCommand(command,msg.data);
 				return {status:0,result:result};
 			}else{
