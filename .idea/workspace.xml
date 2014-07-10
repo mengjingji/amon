@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7988a1e2-198e-4b7b-a92b-75ae8feb61ee" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.js" afterPath="$PROJECT_DIR$/test.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/zhangsan.amon.js" afterPath="$PROJECT_DIR$/zhangsan.amon.js" />
     </list>
     <ignored path="amon.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -263,7 +261,11 @@
       <created>1404970974984</created>
       <updated>1404970974984</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="dddd">
+      <created>1404971637949</created>
+      <updated>1404971637949</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
