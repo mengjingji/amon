@@ -8,7 +8,7 @@ env['event'].on('broadcast',function(msg){
             msg.to.emit('listen',msg);
         }
     }else{
-        console.log('fei fa broadcast!!');
+        console.error('fei fa broadcast!!');
     }
 
 });
@@ -22,12 +22,10 @@ var Amon=function (name){
     this.env=env;
     this.env.push(this);
     this.env[this.name]=this;
-    this.on('reply',function(msg,data){
+    this.callbackMap={};
 
 
-    });
-
-    this.ge1t=function(name){
+    this.get=function(name){
         for(var i=0;i<this.env.length;i++){
             if(name===this.env[i].name)return this.env[i];
         }
@@ -60,7 +58,10 @@ var Amon=function (name){
             if(!msg.to)msg['to']=this;
             if(!msg.time)msg['time']=new Date();
             if(!msg.random)msg['random']=Math.random();
-            if(typeof (callback)==='function')caller.once(msg.random,callback);
+            if(typeof (callback)==='function'){
+                //caller.once(msg.random,callback);
+                this.callbackMap[msg.random]=callback;
+            }
             if(msg.to){
                 if(!msg.from)msg['from']=this;
                 msg['time']=new Date();
@@ -102,15 +103,13 @@ var Amon=function (name){
 				this.doCommand(command,msg);
 				//return {status:0,result:result};
 			}else{
-				console.log('unkown command:'+command+'!!!!!!!!!!!!!!!!!!!!!!!!!!!');
+				console.error('unkown command:'+command+'!!!!!!!!!!!!!!!!!!!!!!!!!!!');
 			}
 		}else{
 			console.log('the language is know !!!');
 		}
 	};
-    this.reply=function(){
 
-    }
 	this.hasCommand=function(command){
 		for(var key in this.commandHandler){
 			if(key===command)return true;
@@ -150,7 +149,11 @@ var Amon=function (name){
 		}
 	}
     this.say({time:new Date(),content:{command:"tell",data:{command:"reply",data:{src:"msgObj:msgReq",result:"obj:result"},method:function(msg){
-        msg.content.data.src.from.emit(msg.content.data.src.random, msg.content.data.result, msg.content.data.src);
+        //msg.content.data.src.from.emit(msg.content.data.src.random, msg.content.data.result, msg.content.data.src);
+        var srcMsg=msg.content.data.src;
+        var result=msg.content.data.result;
+        var msgCallback=this.callbackMap[srcMsg.random];
+        msgCallback.call(this,result);
     }}},from:this,to:this});
 	//console.log('init end...');
 }

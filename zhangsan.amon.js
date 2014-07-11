@@ -46,27 +46,29 @@ function Zhangsan(name){
         this.say({content:{command:"connectToMysql",data:msg.content.data.ds}},function con(conn){
                 conn.query('SELECT * from '+msg.content.data.table, function(err, rows, fields) {
                     if (err) {
-                        throw err;
-                    }
-                    var result = '{\n';
-                    for(var i = 0; i < rows.length; i++){
-                        result += '[';
-                        result += '{';
-                        var row='';
-                        for(var key in rows[i]){
-                            if(typeof(rows[i][key])==='function')continue;
-                            if(row!='')row+=',';
-                            row += key+':' + rows[i][key] ;
+                        this_.say({to:msg.from,content:{command:'reply',data:{src:msg,result:{status:1,e:err,list:null}}} });
+                        //throw err;
+                    }else{
+                        var result = '{\n';
+                        for(var i = 0; i < rows.length; i++){
+                            result += '[';
+                            result += '{';
+                            var row='';
+                            for(var key in rows[i]){
+                                if(typeof(rows[i][key])==='function')continue;
+                                if(row!='')row+=',';
+                                row += key+':' + rows[i][key] ;
+                            }
+                            result+=row;
+                            result += '}';
+                            result += '],\n';
                         }
-                        result+=row;
                         result += '}';
-                        result += '],\n';
+                        //console.log(" data: "+result);
+
+                        this_.say({to:msg.from,content:{command:'reply',data:{src:msg,result:{status:0,data:rows}}} });
+
                     }
-                    result += '}';
-                    //console.log(" data: "+result);
-
-                    this_.say({to:msg.from,content:{command:'reply',data:{src:msg,result:result}} });
-
                     conn.end();
                 });
 

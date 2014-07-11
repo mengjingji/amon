@@ -8,30 +8,51 @@ var lisi=new Lisi('lisi');
 var wangwu=new WangWu('WangWu');
 var zhangsan=new ZhangSan('zhangsan');
 
-zhangsan.say({content:{command:"save",data:{entity:{user_name:'zhangsan',question_content:'3'},table:'t_crm_question'}}},function(result){
-    console.log("++++++++++++:status="+result.status)
-    console.log("++++++++++++:insertId="+result.insertId)
-});
+//zhangsan.say({content:{command:"save",data:{entity:{user_name:'zhangsan',question_content:'3'},table:'t_crm_question'}}},function(result){
+    //console.log("++++++++++++:status="+result.status)
+    //console.log("++++++++++++:insertId="+result.insertId)
+//});
 //zhangsan.listen({command:"list",data:{table:'t_crm_question'},isEcho:true});
 
-var msg={to:zhangsan,content:{command:"list",data:{table:'t_crm_question'}},random:Math.random()};
+/**/
+lisi.say({to:zhangsan,content:{command:"list",data:{table:'baidu'}}},function (result){
+    if(result.status===0){
+        var rows=result.data;
+        var result = '{\n';
+        for(var i = 0; i < rows.length; i++){
+            result += '[';
+            result += '{';
+            var row='';
+            for(var key in rows[i]){
+                if(typeof(rows[i][key])==='function')continue;
+                if(row!='')row+=',';
+                row += key+':' + rows[i][key] ;
+            }
+            result+=row;
+            result += '}';
+            result += '],\n';
+        }
+        result += '}';
+        zhangsan.log(result);
+    }else{
+        console.log("error:"+result.e.message)
+    }
 
 
-amon.say(msg,function (data){
-    zhangsan.log(data);
-    console.log('seccc////////////////////////////////////////////////////');
+    //console.log('seccc////////////////////////////////////////////////////');
 
 });
 
 
-/*
-amon.say(msg);
-amon.once(msg.random,function (data){
-    zhangsan.log(data);
-    console.log('seccc////////////////////////////////////////////////////');
+zhangsan.say({content:{command:"makeEduDictTree",data:{source:"wenku",object:"dictTree_t"},method:function(msg){
+    //todo
+    //this.log(msg.content);
+    this.say({to:msg.from,content:{command:'reply',data:{src:msg,result:null}}});
+}}},function(result){
+    console.log('eee')
 
-})
- */
+});
+
 
 
 

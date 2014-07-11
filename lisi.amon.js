@@ -12,7 +12,7 @@ function Lisi(name){
         host:'localhost',
         port:3310,
         user:'root',
-        database:'crm',
+        database:'wenku_spider',
         password:'srttest'
     };
 
@@ -29,8 +29,7 @@ function Lisi(name){
         if(!ds)ds=this.ds_default;
 		var conn = mysql.createConnection(ds);
 		console.log('good conneted ok');
-
-        this.say({from:this,to:msg.from,content:{command:'reply',data:{src:msg,result:conn} },time:new Date(),rand:Math.random()});
+        this.say({to:msg.from,content:{command:'reply',data:{src:msg,result:conn} }});
 
 	}}},form:this,to:this});
 
