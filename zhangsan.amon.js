@@ -35,7 +35,7 @@ function Zhangsan(name){
                 var m={to:msg.from,content:{command:'reply',data:{src:msg,result:{status:0,insertId:results.insertId}}},random:Math.random()};
                 caller.say(m);
             });
-
+            conn.end();
 
         });
 

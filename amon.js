@@ -55,12 +55,18 @@ var Amon=function (name){
     this.say=function(msg,callback){
         var caller=this;
         if(typeof (msg)==='object'){
+            if(!msg.content){
+                var msg_={};
+                msg_.content=msg;
+                msg=msg_;
+            }
+
             if(!msg.to)msg['to']=this;
             if(!msg.time)msg['time']=new Date();
             if(!msg.random)msg['random']=Math.random();
             if(typeof (callback)==='function'){
                 //caller.once(msg.random,callback);
-                this.callbackMap[msg.random]=callback;
+                if(callback)this.callbackMap[msg.random]=callback;
             }
             if(msg.to){
                 if(!msg.from)msg['from']=this;
@@ -94,8 +100,13 @@ var Amon=function (name){
 				//return {status:0,result:result};
 			}else if(command==='tell'){
 				var data=msg.content.data;
-				this.commandHandler[data.command]=data.method;
-				console.log(this.name+' teach me command:'+data.command+',have learn.');
+				if(data.method){
+                    this.commandHandler[data.command]=data.method;
+                    console.log(this.name+' teach me command:'+data.command+',have learn.');
+                }else{
+                    console.warn('tell me command: '+data.command,' , but no method,do nothing instead!')
+                }
+
 			}else if(msg.content.method){
 				this.commandHandler[command]=msg.content.method;
 				console.log(this.name+' tell me command:'+command+',have learn.');
@@ -153,7 +164,7 @@ var Amon=function (name){
         var srcMsg=msg.content.data.src;
         var result=msg.content.data.result;
         var msgCallback=this.callbackMap[srcMsg.random];
-        msgCallback.call(this,result);
+        if(msgCallback)msgCallback.call(this,result,srcMsg);
     }}},from:this,to:this});
 	//console.log('init end...');
 }

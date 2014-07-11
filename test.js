@@ -14,7 +14,7 @@ var zhangsan=new ZhangSan('zhangsan');
 //});
 //zhangsan.listen({command:"list",data:{table:'t_crm_question'},isEcho:true});
 
-/**/
+/*
 lisi.say({to:zhangsan,content:{command:"list",data:{table:'baidu'}}},function (result){
     if(result.status===0){
         var rows=result.data;
@@ -42,13 +42,47 @@ lisi.say({to:zhangsan,content:{command:"list",data:{table:'baidu'}}},function (r
     //console.log('seccc////////////////////////////////////////////////////');
 
 });
+ */
 
 
-zhangsan.say({content:{command:"makeEduDictTree",data:{source:"wenku",object:"dictTree_t"},method:function(msg){
-    //todo
+zhangsan.say({command:"makeEduDictTree",data:{source:"wenku",object:"dictTree_t"},method:function(msg){
+    var fields=[
+        {id:101,name:'学段',code:'stage',parentId:0},
+        {id:102,name:'学客',code:'subject',parentId:0},
+        {id:103,name:'教材版本',code:'version',parentId:0},
+        {id:104,name:'年级',code:'grade',parentId:0}
+    ];
+    for(var i=0;i<fields.length;i++){
+        console.log(fields[i]['code']);
+        var a=fields[i]['code'];
+        zhangsan.say({content:{command:"save",data:{entity:fields[i],table:'dictTree_copy'}}},function(result,src){
+            if(result.status==0){
+                var parentId=src.content.data.entity.id;
+                var entity=src.content.data.entity;
+                zhangsan.say({command:'sql',data:{parentId:parentId,field:entity,sql:'select '+entity.code+' from baidu group by '+entity.code+';'}},function(rows,src){
+                    //zhangsan.say({command:'showRs',data:{rs:rows}});
+                    for(var j=0;j<rows.length;j++){
+                        //console.log(rows[j][a])
+                        console.log(rows[j]);
+                        console.log(src.content.data.field.code);
+                        var entity={id:0,name:0,code:0,parentId:0};
+                        entity.id=parentId*1000+1+j;
+                        entity.name=rows[j][src.content.data.field.code];
+                        entity.code=null;
+                        entity.parentId=src.content.data.parentId;
+                        console.log(entity);
+                        zhangsan.say({content:{command:"save",data:{entity:entity,table:'dictTree_copy'}}},function(result,src){
+
+                        });
+
+                    }
+                })
+            }
+        });
+    }
     //this.log(msg.content);
     this.say({to:msg.from,content:{command:'reply',data:{src:msg,result:null}}});
-}}},function(result){
+}},function(result){
     console.log('eee')
 
 });

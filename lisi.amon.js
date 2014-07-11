@@ -34,6 +34,34 @@ function Lisi(name){
 	}}},form:this,to:this});
 
 	this.say({time:new Date(),content:{command:"tell",data:{command:"help",data:{},method:function(data){}}},form:this,to:this});
+    var zhangsan=this;
+    zhangsan.say({command:"tell",data:{command:"sql",data:{sql:"string:sql"},method:function(msg){
+        zhangsan.say({command:'connectToMysql'},function(conn){
+            conn.query(msg.content.data.sql,function(err, rows, fields){
+                zhangsan.say({command:'reply',data:{src:msg,result:rows}});
+            });
+            conn.end();
+        });
+    }}});
+    zhangsan.say({command:"tell",data:{command:"showRs",data:{rows:"object:rows"},method:function(msg){
+        var rows=msg.content.data.rs;
+        var result = '{\n';
+        for(var i = 0; i < rows.length; i++){
+            result += '[';
+            result += '{';
+            var row='';
+            for(var key in rows[i]){
+                if(typeof(rows[i][key])==='function')continue;
+                if(row!='')row+=',';
+                row += key+':' + rows[i][key] ;
+            }
+            result+=row;
+            result += '}';
+            result += '],\n';
+        }
+        result += '}';
+        console.log(" data: "+result);
+    }}});
 
 }
 util.inherits(Lisi,Amon);
