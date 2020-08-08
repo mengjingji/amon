@@ -1,6 +1,3 @@
 FROM centos:7
-RUN yum install -y wget expect
-RUN mkdir -p /etc/init.d/
-RUN touch /etc/init.d/crond
-RUN chmod 777 /etc/init.d/crond
-RUN wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssrmu.sh && chmod +x ssrmu.sh && bash ssrmu.sh
+COPY ./install.sh /install.sh
+RUN echo -e "1\n192.168.1.1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"| sh /install.sh
