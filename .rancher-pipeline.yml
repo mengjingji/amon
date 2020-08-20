@@ -1,0 +1,11 @@
+stages:
+- name: builddocker
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: vvv
+      pushRemote: true
+      registry: registry.cn-hongkong.aliyuncs.com/amon82
+timeout: 60
+notification: {}
