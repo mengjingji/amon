@@ -4,7 +4,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: vvv
+      tag: ng
       pushRemote: true
       registry: registry.cn-hongkong.aliyuncs.com/amon82
 timeout: 60
